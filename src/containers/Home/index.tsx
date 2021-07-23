@@ -26,6 +26,7 @@ function Home() {
   });
 
   const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY as string;
+  const REACT_APP_API_URL = process.env.REACT_APP_API_URL as string;
 
   const [type, setType] = useState("regions");
 
@@ -45,7 +46,7 @@ function Home() {
     } else {
       setType("results");
     }
-    fetch(`https://restcountries.eu/rest/v2/name/${val}`).then((res) =>
+    fetch(`${REACT_APP_API_URL}name/${val}`).then((res) =>
       res
         .json()
         .then((data) => {
@@ -88,7 +89,7 @@ function Home() {
 
   const fetchCountrysByRegion = async (continent: RegionsType) => {
     setLoading(true);
-    fetch(`https://restcountries.eu/rest/v2/region/${continent}`).then((res) =>
+    fetch(`${REACT_APP_API_URL}region/${continent}`).then((res) =>
       res
         .json()
         .then((data) => {
