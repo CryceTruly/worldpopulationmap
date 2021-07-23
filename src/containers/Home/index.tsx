@@ -1,8 +1,9 @@
 import { useCallback, useState } from "react";
 import { debounce } from "debounce";
-import REGIONS, { RegionsType } from "types/regions";
 import HomeComponent from "pages/Home";
 import AppChangeEvenTtype from "types/event";
+import { RegionsType } from "types/regions";
+import regions from "constants/regions";
 
 function Home() {
   const [results, setResults] = useState([]);
@@ -24,9 +25,7 @@ function Home() {
     population: undefined,
   });
 
-  const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY || "";
-
-  console.log("API_KEY :>> ", API_KEY);
+  const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY as string;
 
   const [type, setType] = useState("regions");
 
@@ -83,7 +82,7 @@ function Home() {
             setLoading(false);
           }
         })
-        .catch((err) => setLoading(false))
+        .catch(() => setLoading(false))
     );
   };
 
@@ -116,13 +115,13 @@ function Home() {
           }));
           setLoading(false);
         })
-        .catch((err) => setLoading(false))
+        .catch(() => setLoading(false))
     );
   };
 
   const getData = () => {
     if (type === "regions") {
-      return REGIONS;
+      return regions;
     }
     if (type === "suggestions") {
       return suggestions.map((item: any) => item.name);
@@ -150,8 +149,6 @@ function Home() {
   );
 
   const onChange = (e: AppChangeEvenTtype) => {
-    e.preventDefault();
-    e.stopPropagation();
     if (!e.target.value) {
       setResults([]);
       setSuggestions([]);

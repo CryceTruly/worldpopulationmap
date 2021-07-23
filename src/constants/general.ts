@@ -1,2 +1,2 @@
-const APP_NAME = "Mkoba Pay";
+const APP_NAME = "WPM";
 export default APP_NAME;

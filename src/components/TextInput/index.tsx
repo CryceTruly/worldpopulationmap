@@ -10,12 +10,13 @@ type Props = {
   inputStyle?: Record<string, any>;
   mainWrapperStyle?: Record<string, any>;
   value?: string;
-  onChange?: (e: any) => void;
+  onChange: (e: any) => void;
   onKeyDown?: (e: any) => void;
   type?: string;
   maxLength?: number;
   error?: Record<string, any>;
   ownRef?: any;
+  onKeyUp: (e: any) => void;
 };
 function TextInput({
   icon,
@@ -25,6 +26,7 @@ function TextInput({
   className,
   inputClassName,
   style,
+  onKeyUp,
   value,
   onChange,
   onKeyDown,
@@ -67,10 +69,13 @@ function TextInput({
             className={getInputClassNames()}
             placeholder={placeholder}
             value={value}
-            onChange={onChange}
+            onChange={(e) => {
+              onChange?.(e);
+            }}
             onKeyDown={onKeyDown}
             maxLength={maxLength}
             ref={ownRef}
+            onKeyUp={onKeyUp}
             style={getInputStyles()}
           />
           {icon && icon}
