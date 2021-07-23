@@ -1,0 +1,134 @@
+$xxlarge-margin: ($xsmall * 12);
+$xlarge-margin: ($xsmall * 6);
+$large-margin: ($xsmall * 3);
+$medium-margin: ($xsmall * 2);
+$small-margin: $xsmall;
+
+/* margin */
+.xxlarge-margin {
+  margin: ($xsmall * 12);
+}
+.xlarge-margin {
+  margin: ($xsmall * 6);
+}
+.large-margin {
+  margin: ($xsmall * 3);
+}
+.medium-margin {
+  margin: ($xsmall * 2);
+}
+.small-margin {
+  margin: $xsmall;
+}
+/* left margin */
+.xxlarge-margin-left {
+  margin-left: ($xsmall * 12);
+}
+.xlarge-margin-left {
+  margin-left: ($xsmall * 6);
+}
+.large-margin-left {
+  margin-left: ($xsmall * 3);
+}
+.medium-margin-left {
+  margin-left: ($xsmall * 2);
+}
+.small-margin-left {
+  margin-left: $xsmall;
+}
+/* right margin */
+.xxlarge-margin-right {
+  margin-right: ($xsmall * 12);
+}
+.xlarge-margin-right {
+  margin-right: ($xsmall * 6);
+}
+.large-margin-right {
+  margin-right: ($xsmall * 3);
+}
+.medium-margin-right {
+  margin-right: ($xsmall * 2);
+}
+.small-margin-right {
+  margin-right: $xsmall;
+}
+/* top margin */
+.xxlarge-margin-top {
+  margin-top: ($xsmall * 12);
+}
+.xlarge-margin-top {
+  margin-top: ($xsmall * 6);
+}
+.large-margin-top {
+  margin-top: ($xsmall * 3);
+}
+.medium-margin-top {
+  margin-top: ($xsmall * 2);
+}
+.small-margin-top {
+  margin-top: $xsmall;
+}
+/* bottom margin */
+.xxlarge-margin-bottom {
+  margin-bottom: ($xsmall * 12);
+}
+.xlarge-margin-bottom {
+  margin-bottom: ($xsmall * 6);
+}
+.large-margin-bottom {
+  margin-bottom: ($xsmall * 3);
+}
+.medium-margin-bottom {
+  margin-bottom: ($xsmall * 2);
+}
+.small-margin-bottom {
+  margin-bottom: $xsmall;
+}
+
+// horizontal margin
+.xxlarge-h-margin {
+  margin-left: ($xsmall * 6);
+  margin-right: ($xsmall * 6);
+}
+.xlarge-h-margin {
+  margin-left: ($xsmall * 4);
+  margin-right: ($xsmall * 4);
+}
+.large-h-margin {
+  margin-left: ($xsmall * 3);
+  margin-right: ($xsmall * 3);
+}
+.medium-h-margin {
+  margin-left: ($xsmall * 2);
+  margin-right: ($xsmall * 2);
+}
+.small-h-margin {
+  margin-left: $xsmall;
+  margin-right: $xsmall;
+}
+
+// vertical margin
+.xxlarge-v-margin {
+  margin-top: ($xsmall * 6);
+  margin-bottom: ($xsmall * 6);
+}
+.xlarge-v-margin {
+  margin-top: ($xsmall * 4);
+  margin-bottom: ($xsmall * 4);
+}
+.large-v-margin {
+  margin-top: ($xsmall * 3);
+  margin-bottom: ($xsmall * 3);
+}
+.medium-v-margin {
+  margin-top: ($xsmall * 2);
+  margin-bottom: ($xsmall * 2);
+}
+.small-v-margin {
+  margin-top: $xsmall;
+  margin-bottom: $xsmall;
+}
+
+.no-margin {
+  margin: 0 !important;
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6" height="10" viewBox="0 0 6 10">
+    <defs>
+        <path id="xivyl28apa" d="M5.998 6.943L2.943 9.998 0 7.055l5.998-.112zM3.045 0L5.98 2.934 0 3.045 3.045 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-353 -27) translate(244 13) translate(109 14)">
+                    <mask id="ckqq32jbhb" fill="#fff">
+                        <use xlink:href="#xivyl28apa"/>
+                    </mask>
+                    <use fill="#FFF" fill-opacity="0" xlink:href="#xivyl28apa"/>
+                    <g fill="#9EA0A5" mask="url(#ckqq32jbhb)">
+                        <path d="M0 0H6V10H0z"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

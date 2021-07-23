@@ -1,13 +1,13 @@
 // eslint-disable-next-line no-use-before-define
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "assets/style/main.scss";
 import App from "App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App a={1} />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,0 +1,138 @@
+$black: #101010;
+$light-black: #333556;
+$lighter-black: #252631;
+$light: #f4f4f4;
+$grey: #98a9bc;
+$white: #ffffff;
+$secondary: #0a94be;
+$light-secondary: #36c5f0;
+$danger: #d64c4c;
+$light-danger: #ff2674;
+$success: #1c8a4a;
+$info: #1cbdee;
+$light-grey: #cbcbcb;
+$lighter-grey: #e0e0e028;
+$light-red: #f5eeee;
+$yellow: #f9d342;
+$blue: #00027a;
+$darken-blue: #333556;
+$darker-blue: #282b4e;
+$orange: #ea5726;
+$light-purple: #3c205c;
+
+$colors: (
+  black: #101010,
+  light-black: #333556,
+  lighter-black: #252631,
+  light: #f4f4f4,
+  grey: #b0aeae,
+  white: #ffffff,
+  secondary: #0a94be,
+  light-secondary: #36c5f0,
+  danger: #d64c4c,
+  light-danger: #ff2674,
+  success: #1c8a4a,
+  info: #1cbdee,
+  light-grey: #cbcbcb,
+  lighter-grey: #6e6d6d,
+  light-red: #f5eeee,
+  yellow: #f9d342,
+  blue: #00027a,
+  darken-blue: #333556,
+  darker-blue: #282b4e,
+  dark-blue: #333556,
+);
+
+.btn-secondary {
+  background: $light-black;
+}
+// background
+@each $name, $hex in $colors {
+  .#{$name} {
+    background-color: $hex;
+  }
+}
+.transparent {
+  background-color: transparent;
+}
+.border-danger {
+  border-color: $danger !important;
+}
+
+// text color
+@each $name, $hex in $colors {
+  .text-#{$name} {
+    color: $hex;
+  }
+
+  // text
+  .text-black {
+    color: $black;
+  }
+  .text-light-black {
+    color: $light-black;
+  }
+  .text-yellow {
+    color: $yellow;
+  }
+  .text-light {
+    color: $light;
+  }
+  .text-light-red {
+    color: $light-red;
+  }
+  .text-light-grey {
+    color: $light-grey;
+  }
+  .text-grey {
+    color: $grey;
+  }
+  .text-white {
+    color: $white;
+  }
+
+  .text-secondary {
+    color: $secondary;
+  }
+  .text-danger {
+    color: $danger;
+  }
+  .text-light-danger {
+    color: $light-danger;
+  }
+  .text-success {
+    color: $success;
+  }
+  .text-info {
+    color: $info;
+  }
+  .text-blue {
+    color: $blue;
+  }
+  .text-darken-blue {
+    color: $darken-blue;
+  }
+  .text-light-purple {
+    color: $light-purple;
+  }
+
+  // border color
+  @each $name, $hex in $colors {
+    .b-#{$name} {
+      border-color: $hex;
+    }
+
+    .border-#{$name} {
+      border-color: $hex;
+    }
+    .border-#{$name}-important {
+      border-color: $hex !important;
+    }
+  }
+}
+
+body {
+  background: $light;
+
+  font-family: Avenir;
+}

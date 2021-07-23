@@ -1,0 +1,59 @@
+$xsmall: 8px;
+$xmsmall: 10px;
+$xlsmall: 12px;
+$small: 14px;
+$xmedium: 18px;
+$medium: 22px;
+$large: 24px;
+$xlarge: 28px;
+$xxlarge: 32px;
+// screens
+$largeScreen: 1024px;
+$mediumScreen: 999px;
+$smallScreen: 776px;
+
+// font text size
+.xxlarge-text {
+  font-size: $xxlarge;
+}
+.x-large-text {
+  font-size: $xlarge;
+}
+.large-text {
+  font-size: $large;
+}
+.medium-text {
+  font-size: $medium;
+}
+.sm-medium-text {
+  font-size: $xmedium;
+}
+.small-text {
+  font-size: $small;
+}
+
+.x-small-text {
+  font-size: $xsmall;
+}
+
+.xm-small-text {
+  font-size: $xmsmall;
+}
+.xl-small-text {
+  font-size: $xlsmall;
+}
+
+@for $i from 1 through 20 {
+  .width-#{$i * 5}-vw {
+    width: $i * 5vw;
+  }
+  .height-#{$i * 5}-vh {
+    height: $i * 5vh;
+  }
+  .width-#{$i * 5}-percent {
+    width: $i * 5%;
+  }
+  .height-#{$i * 5}-percent {
+    height: $i * 5%;
+  }
+}
