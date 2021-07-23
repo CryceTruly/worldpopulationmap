@@ -22,6 +22,7 @@ function Checkbox({
     if (!valid) {
       return "border-danger";
     }
+
     if (valid && checked) {
       return "border-success";
     }

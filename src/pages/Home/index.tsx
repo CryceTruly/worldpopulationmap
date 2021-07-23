@@ -11,6 +11,7 @@ import { RegionsType } from "types/regions";
 import { ResultsType } from "types/results";
 import AppChangeEvenTtype from "types/event";
 import "./style.scss";
+import TextInput from "components/TextInput";
 
 type Props = {
   form: string;
@@ -29,16 +30,14 @@ type Props = {
   markerPositions: Pos[];
   setPosition: any;
 };
-function Home({
+function HomeComponent({
   form,
   searchCountries,
   getTitle,
   API_KEY,
   setForm,
   onChange,
-
   type,
-
   getData,
   onKeyUp,
   fetchCountrysByRegion,
@@ -67,13 +66,13 @@ function Home({
               e.preventDefault();
             }}
           >
-            <input
+            <TextInput
               type="text"
-              name=""
-              placeholder="Enter a place"
-              id=""
-              value={form || ""}
-              onChange={onChange}
+              placeholder="Enter a country"
+              value={form}
+              onChange={(val) => {
+                onChange(val);
+              }}
               onKeyUp={onKeyUp}
               style={{ width: "100%", fontSize: "21px", padding: "20px" }}
             />
@@ -130,4 +129,4 @@ function Home({
   );
 }
 
-export default Home;
+export default HomeComponent;

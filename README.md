@@ -2,6 +2,12 @@
 
 The world population map is a simple application that allows users to locate and see the population details of any country.
 
+# Deployment URL
+
+https://sleepy-haibt-7d48ce.netlify.app/
+
+(Click me)[https://sleepy-haibt-7d48ce.netlify.app/]
+
 ## Available Scripts
 
 In the project directory, you can run:

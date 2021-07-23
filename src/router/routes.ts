@@ -1,5 +1,5 @@
 import { RouteProps } from "react-router-dom";
-import Home from "pages/Home";
+import Home from "containers/Home";
 
 const routes = [
   {
