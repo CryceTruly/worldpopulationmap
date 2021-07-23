@@ -74,7 +74,7 @@ function HomeComponent({
                 onChange(val);
               }}
               onKeyUp={onKeyUp}
-              style={{ width: "100%", fontSize: "21px", padding: "20px" }}
+              style={{ width: "100%" }}
             />
           </form>
 
@@ -96,7 +96,7 @@ function HomeComponent({
         </div>
       </div>
 
-      <div className="map-pane" style={{ width: "70%", background: "white" }}>
+      <div className="map-pane" style={{ width: "100%", background: "white" }}>
         <LoadScript googleMapsApiKey={API_KEY}>
           <GoogleMap
             id="marker-example"
