@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
+
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/avenir_ff/AvenirLTStd-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: AvenirBold;
+  src: url("../fonts/avenir_ff/AvenirLTStd-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: AvenirRoman;
+  src: url("../fonts/avenir_ff/AvenirLTStd-Roman.otf") format("opentype");
+}
+
+@font-face {
+  font-family: AvenirOblique;
+  src: url("../fonts/avenir_ff/Avenir-Oblique.otf") format("opentype");
+}
+
+@font-face {
+  font-family: AvenirMedium;
+  src: url("../fonts/avenir_ff/Avenir-Medium.ttf") format("opentype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+@import "pixels";
+@import "colors";
+@import "margin";
+@import "padding";
+@import "shadow";
+@import "radius";
+@import "opacity";
+@import "border";
+@import "dimensions";
+@import "misc";
+
+.clear {
+  clear: both;
+}
+.line-through {
+  text-decoration: line-through;
+}
+
+// overflow
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+// white-space
+.white-space-wrap {
+  white-space: normal;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+// text overflow
+.text-overflow-ellipsis {
+  text-overflow: ellipsis;
+}
+
+// float
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.center {
+  margin: 0 auto;
+  display: block;
+}
+
+// align
+.left-align {
+  text-align: left;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+/* bold */
+
+.bold {
+  font-weight: bold;
+}
+
+.lighter {
+  font-weight: lighter;
+  margin-left: 2rem;
+}
+.font-light {
+  font-weight: 200;
+}
+
+.no-bold {
+  font-weight: normal;
+}
+
+/* text transform */
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.no-hover {
+  background: none !important;
+}
+
+.hide {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// display
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+// position
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

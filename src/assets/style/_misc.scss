@@ -1,0 +1,31 @@
+.underline {
+  text-decoration: underline;
+}
+.avenir-light {
+  font-family: AvenirOblique;
+}
+
+.avenir-medium {
+  font-family: AvenirMedium;
+}
+.oblique {
+  font-style: oblique;
+}
+.avenir {
+  font-family: Avenir;
+}
+.avenir-book {
+  font-family: AvenirBold;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+input:focus {
+  outline: none !important;
+}
+
+.invalid-input {
+  border-color: red;
+}
