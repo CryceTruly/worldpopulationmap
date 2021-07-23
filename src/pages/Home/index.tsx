@@ -71,7 +71,6 @@ function HomeComponent({
               placeholder="Enter a country"
               value={form}
               onChange={(val) => {
-                console.log("val :>> ", val);
                 onChange(val);
               }}
               onKeyUp={onKeyUp}
