@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# World population map
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The world population map is a simple application that allows users to locate and see the population details of any country.
 
 ## Available Scripts
 
